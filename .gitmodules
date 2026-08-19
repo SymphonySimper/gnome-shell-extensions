@@ -1,0 +1,3 @@
+[submodule "extensions/panel-free"]
+	path = extensions/panel-free
+	url = https://github.com/fthx/panel-free
