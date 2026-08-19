@@ -35,6 +35,7 @@ export default class WebSearchExtension extends Extension {
 
   disable() {
     overview.searchController.removeProvider(this);
+    this.display = null;
   }
 
   getInitialResultSet(terms, cancellable) {
