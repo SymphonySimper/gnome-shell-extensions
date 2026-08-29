@@ -4,7 +4,7 @@ import St from "gi://St";
 import { overview } from "resource:///org/gnome/shell/ui/main.js";
 import { Extension } from "resource:///org/gnome/shell/extensions/extension.js";
 
-const SEARCH_URL = "https://p1a.in/s/";
+const SEARCH_URL = "https://p1a.in/";
 
 export default class WebSearchExtension extends Extension {
   get id() {
