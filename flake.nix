@@ -54,6 +54,7 @@
         in
         (lib.genAttrs extensionNames mkExtension)
         // {
+          caffeine = pkgs.gnomeExtensions.caffeine;
           panel-free = pkgs.gnomeExtensions.panel-free;
         }
       );
