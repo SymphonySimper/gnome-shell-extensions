@@ -2,7 +2,6 @@
   description = "GNOME Shell extensions";
 
   inputs = {
-    self.submodules = true;
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
   };
 
@@ -53,7 +52,10 @@
               };
             };
         in
-        lib.genAttrs extensionNames mkExtension
+        (lib.genAttrs extensionNames mkExtension)
+        // {
+          panel-free = pkgs.gnomeExtensions.panel-free;
+        }
       );
     };
 }
